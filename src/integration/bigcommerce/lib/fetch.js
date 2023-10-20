@@ -1,5 +1,5 @@
 export async function graphQlFetch( {query, variables, cache = 'force-cache'} ){
-    const BARER_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJjaWQiOjEsImNvcnMiOltdLCJlYXQiOjE4ODU2MzUxNzYsImlhdCI6MTY5Nzc5ODgxOCwiaXNzIjoiQkMiLCJzaWQiOjEwMDI5NjQ4NjMsInN1YiI6InRxNnQ4ZGF0aWk3bDAyZG9sazN0NDI0d3pkOHNpOXEiLCJzdWJfdHlwZSI6MiwidG9rZW5fdHlwZSI6MX0.UY_Qr-32w8gfoS8JkC_BkvC-GS5dodgI0DhkqSL8Xq96N9xNZWTHks1bytcFhSXJ-vgaqhyyAjk7lcN__2FUsw";
+    const BARER_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJjaWQiOjEsImNvcnMiOlsiaHR0cDovL2xvY2FsaG9zdDozMDAwIiwiaHR0cHM6Ly9maXJzdC1iaWdjb21tZXJjZS1pbnRlZ3JhdGlvbi52ZXJjZWwuYXBwIl0sImVhdCI6MTg4NTYzNTE3NiwiaWF0IjoxNjk3Nzk5MDQ4LCJpc3MiOiJCQyIsInNpZCI6MTAwMjk2NDg2Mywic3ViIjoidHE2dDhkYXRpaTdsMDJkb2xrM3Q0MjR3emQ4c2k5cSIsInN1Yl90eXBlIjoyLCJ0b2tlbl90eXBlIjoxfQ.bqjmadC-sxw-Z9cMhuhkCeP7hHAeOZCKKln6Pou2NAQv2Y2HGJspiRHCazsK7simhT0twOTHTAJkDADQJzvHxg";
   //const endpoint = "https://ms-sandbox.mybigcommerce.com/graphql";
   const endpoint = "https://store-vhdd9nv8ef.mybigcommerce.com/graphql";
 
