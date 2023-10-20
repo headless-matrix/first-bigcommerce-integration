@@ -1,10 +1,9 @@
 export async function graphQlFetch( {query, variables, cache = 'force-cache'} ){
-    const BARER_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJjaWQiOjEsImNvcnMiOlsiaHR0cHM6Ly9maXJzdC1iaWdjb21tZXJjZS1pbnRlZ3JhdGlvbi52ZXJjZWwuYXBwIl0sImVhdCI6MTg4NTYzNTE3NiwiaWF0IjoxNjk3Nzk5NjkxLCJpc3MiOiJCQyIsInNpZCI6MTAwMjk2NDg2Mywic3ViIjoidHE2dDhkYXRpaTdsMDJkb2xrM3Q0MjR3emQ4c2k5cSIsInN1Yl90eXBlIjoyLCJ0b2tlbl90eXBlIjoxfQ.o9yiwR6-jZQj-PAjKL_Tcb2RPUsf6BPmVDi-0fWLLsZPvylMZpiWv1sudrfEMhMEb3qn4QLQHzkoHdu0B_uqiQ";
-  //const endpoint = "https://ms-sandbox.mybigcommerce.com/graphql";
-  const endpoint = "https://store-vhdd9nv8ef.mybigcommerce.com/graphql";
+  const BARER_TOKEN =  process.env.BIGCOMMERCE_BARER_TOKEN;
+  const endpoint = process.env.BIGCOMMERCE_ENDPOINT;
 
-
-  const reinvalidate = (cache == 'force-cache') ? {} : { revalidate: 900 }  // 15 minutes
+  //const reinvalidate = (cache == 'force-cache') ? {} : { revalidate: 900 }  // 15 minutes
+  const reinvalidate = 'force-cache';
 
   const result = await fetch(`${endpoint}`, {
     method: "POST",
