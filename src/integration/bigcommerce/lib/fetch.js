@@ -3,6 +3,7 @@ export async function graphQlFetch( {query, variables, cache = 'force-cache'} ){
   //const endpoint = "https://ms-sandbox.mybigcommerce.com/graphql";
   const endpoint = "https://store-vhdd9nv8ef.mybigcommerce.com/graphql";
 
+  
   const reinvalidate = (cache == 'force-cache') ? {} : { revalidate: 900 }  // 15 minutes
 
   const result = await fetch(`${endpoint}`, {
