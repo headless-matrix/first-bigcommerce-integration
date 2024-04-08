@@ -4,9 +4,9 @@ import { query } from "./query/getTree";
 
 export const getTree: () => Promise<any> = () => {
     const variables = {}
-    const BARER_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJjaWQiOjEsImNvcnMiOlsiaHR0cHM6Ly9maXJzdC1iaWdjb21tZXJjZS1pbnRlZ3JhdGlvbi52ZXJjZWwuYXBwIl0sImVhdCI6MTg4NTYzNTE3NiwiaWF0IjoxNjk3ODExOTgzLCJpc3MiOiJCQyIsInNpZCI6MTAwMjk2NDg2Mywic3ViIjoidHE2dDhkYXRpaTdsMDJkb2xrM3Q0MjR3emQ4c2k5cSIsInN1Yl90eXBlIjoyLCJ0b2tlbl90eXBlIjoxfQ.LWUi5FNhTbj_qZl3pccYX0ko9Ak0zrMhaGf2ByG861Y3uhDwhttBuzVE5vPMG7VJyKosWMPf3hMo3QzMIeqS6w";
+    const BARER_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJjaWQiOjEsImNvcnMiOltdLCJlYXQiOjE4ODU2MzUxNzYsImlhdCI6MTcxMjU2NzQ0MywiaXNzIjoiQkMiLCJzaWQiOjEwMDI5NjQ4NDUsInN1YiI6Imlhang4ZDA0MjJrZm9iZmh1b3o4MW5sd3ZzZXM3biIsInN1Yl90eXBlIjoyLCJ0b2tlbl90eXBlIjoyfQ.yqBnpWIIvKK0ngKK0GjUakvMnswDQrE_7nX6fOquq8dxcR-yHqkFsx4zLTVpbGeg12g9HrIgE8fto4jCVd09CQ";
     
-    const ENDPOINT = "https://store-vhdd9nv8ef.mybigcommerce.com/graphql";
+    const ENDPOINT = "https://store-irzkz7wvyt.mybigcommerce.com/graphql";
     const auth = {
         "Content-Type": "application/json",
         "Accept": "application/json",
